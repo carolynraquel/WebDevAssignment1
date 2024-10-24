@@ -3,7 +3,7 @@ h1, h2 {
   text-align: center; /* center heading 1, heading 2 */
   margin: 0 auto; /* removes any default margin that can affect proper positioning*/
   font-family: Montserrat+Alternates;
-  font-weight: 500;
+  font-weight: 700;
 }
 .tableauPlaceholder {
   position: relative;
