@@ -1,15 +1,8 @@
 /* styles.css */
 body {
-  display: flex;
-  justify-content: center; /* horizontally centered */
-  align-items: center;     /* vertically centered */
-  height: 100vh;           /* this is the full height of the viewport */
+  font-family: Arial, sans-serif;
   margin: 0;
-}
-
-.container {
-  max-width: 960px;
-  width: 100%;            /* container fills parent */
+  padding: 0;
 }
 
 .tableauPlaceholder {
