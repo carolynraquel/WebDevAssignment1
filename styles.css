@@ -1,19 +1,21 @@
 /* styles.css */
-.container body {
-    display: flex;
-    justify-content: center; /* centers horizontally */
-    align-items: center; /* centers vertically */
-    height: 100vh; /* full viewport height */
-    margin: 0;
-  }
-  .container {
-    max-width: 960px;
-  }
-  
+body {
+  display: flex;
+  justify-content: center; /* horizontally centered */
+  align-items: center;     /* vertically centered */
+  height: 100vh;           /* this is the full height of the viewport */
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;            /* container fills parent */
+}
+
 .tableauPlaceholder {
-    position: relative;
+  position: relative;
 }
 
 .tableauViz {
-    display: none;
+  display: block; /* make it visible*/
 }
