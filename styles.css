@@ -11,3 +11,11 @@ h1, h2 {
 .tableauViz {
   display: none;
 }
+
+body {
+  background-color: #f0f0f0; /* light gray background */
+}
+
+h1 {
+  background-color: rgb(255, 215, 0); /* gold background */
+}
