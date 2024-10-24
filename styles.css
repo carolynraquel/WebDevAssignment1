@@ -1,4 +1,9 @@
 /* styles.css */
+.container {
+    max-width: 960px; /* or any width you prefer */
+    margin: 0 auto;
+  }
+  
 .tableauPlaceholder {
     position: relative;
 }
