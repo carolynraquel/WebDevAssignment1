@@ -1,4 +1,8 @@
 /* styles.css */
+h1, h2 {
+  text-align: center; /* center heading 1, heading 2 */
+  margin: 0 auto; /* removes any default margin that can affect proper positioning*/
+}
 .tableauPlaceholder {
   position: relative;
 }
