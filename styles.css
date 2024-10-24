@@ -1,14 +1,7 @@
 /* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .tableauPlaceholder {
   position: relative;
 }
-
 .tableauViz {
-  display: block; /* make it visible*/
+  display: none;
 }
