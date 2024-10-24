@@ -1,5 +1,11 @@
 /* styles.css */
+
+body {
+  background-color: #f0f0f0; /* light gray background */
+}
+
 h1, h2 {
+  background-color: rgb(255, 215, 0); /* gold background */
   text-align: center; /* center heading 1, heading 2 */
   margin: 0 auto; /* removes any default margin that can affect proper positioning*/
   font-family: Montserrat+Alternates;
@@ -12,10 +18,3 @@ h1, h2 {
   display: none;
 }
 
-body {
-  background-color: #f0f0f0; /* light gray background */
-}
-
-h1 {
-  background-color: rgb(255, 215, 0); /* gold background */
-}
