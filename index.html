@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,6 @@
     <meta name="description" content="Interactive resume and landing page for a professional portfolio.">
     <meta name="author" content="Your Name">
     <meta name="robots" content="index, follow">
-    <!-- Removed the theme-color meta tag -->
     <link rel="alternate" href="index-es.html" hreflang="es">
     <title>Interactive Resume - My Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
@@ -111,118 +109,4 @@
     </script>
 
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Interactive resume and landing page for a professional portfolio.">
-    <meta name="author" content="Your Name">
-    <meta name="robots" content="index, follow">
-    <!-- Removed the theme-color meta tag -->
-    <link rel="alternate" href="index-es.html" hreflang="es">
-    <title>Interactive Resume - My Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- Navigation Bar Section -->
-    <div id="nav-container">
-        <nav>
-            <ul>
-                <li><a href="index.html" id="home-link">Home</a></li>
-                <li><a href="tableauresume.html" id="resume-link">Resume</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Language Selection Section -->
-    <div id="language-select-container">
-        <label id="language-select" onchange="changeLanguage(this.value)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-        </label>
-    </div>
-
-    <!-- Welcome Section -->
-    <div id="welcome-container">
-        <section id="welcome">
-            <h1 id="welcome-title">Welcome to My Interactive Resume</h1>
-            <p id="welcome-description">Explore my work and experience through an engaging visual journey.</p>
-        </section>
-    </div>
-
-    <!-- About Me Section -->
-    <div id="about-container">
-        <section id="about">
-            <h2 id="about-title">About Me</h2>
-            <p id="about-description">I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.</p>
-        </section>
-    </div>
-
-    <!-- Projects Section -->
-    <div id="projects-container">
-        <section id="projects">
-            <h2 id="projects-title">My Projects</h2>
-            <p id="projects-description">Here are some of the exciting projects I am working on:</p>
-            <!-- Add project list here -->
-            <p id="projects-list">
-            <ol>
-                <li>Social Media Automation with JS & Puppeteer</li>
-                <li>Application of AI in CSAM cases</li>
-                <li>Data Analysis for Unveiling Desires</li>
-            </ol>
-                    </p>
-        </section>
-    </div>
-
-    <!-- Footer Section -->
-    <div id="footer-container">
-        <footer>
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script>
-        // Translations for English and Spanish
-        const translations = {
-            en: {
-                welcomeTitle: "Welcome to My Interactive Resume",
-                welcomeDescription: "Explore my work and experience through an engaging visual journey.",
-                aboutTitle: "About Me",
-                aboutDescription: "I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.",
-                projectsTitle: "My Projects",
-                projectsDescription: "Here are some of the exciting projects I've worked on:"
-            },
-            es: {
-                welcomeTitle: "Bienvenido a mi currículum interactivo",
-                welcomeDescription: "Explora mi trabajo y experiencia a través de un viaje visual envolvente.",
-                aboutTitle: "Sobre mí",
-                aboutDescription: "Soy un desarrollador apasionado y aprendiz de por vida, con habilidades en múltiples lenguajes de programación y tecnologías web.",
-                projectsTitle: "Mis proyectos",
-                projectsDescription: "Aquí algunos de los emocionantes proyectos en los que he trabajado:"
-            }
-        };
-
-        // Function to change language
-        function changeLanguage(lang) {
-            document.getElementById('welcome-title').innerText = translations[lang].welcomeTitle;
-            document.getElementById('welcome-description').innerText = translations[lang].welcomeDescription;
-            document.getElementById('about-title').innerText = translations[lang].aboutTitle;
-            document.getElementById('about-description').innerText = translations[lang].aboutDescription;
-            document.getElementById('projects-title').innerText = translations[lang].projectsTitle;
-            document.getElementById('projects-description').innerText = translations[lang].projectsDescription;
-
-            // Update the nav links for language-specific versions (if applicable)
-            document.getElementById('home-link').innerText = lang === 'en' ? 'Home' : 'Inicio';
-            document.getElementById('resume-link').innerText = lang === 'en' ? 'Resume' : 'Currículum';
-        }
-
-        // Default language is English
-        changeLanguage('en');
-    </script>
-
-</body>
->>>>>>> 05672c0210cd0e686d83a5ae7914c8945e041ea7
 </html>
