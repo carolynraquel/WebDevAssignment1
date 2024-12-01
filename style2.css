@@ -10,4 +10,11 @@ overflow: hidden;}
 .left{position: relative;
 width: 50%;
 height: 100%;
-background: url(background.jpg);}
+background: url(background.jpg);
+overflow: hidden;}
+
+.right{position: relative;
+    width: 50%;
+    height: 100%;
+    background: lavenderblush;
+    overflow: hidden;}    
