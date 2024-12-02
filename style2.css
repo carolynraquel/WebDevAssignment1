@@ -45,8 +45,8 @@ font-family: 'orbitron', sans-serif;
     }
 }
 .left h1 {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke:3px;
+    color: transparent;
+    stroke:3px;
     left: 100%;
 }
 .scan-lines {
