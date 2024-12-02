@@ -38,7 +38,7 @@ background: url(background.jpg);
         rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
     );
     pointer-events: none; /* Do not interfere with interactions */
-    animation: scan 1s linear infinite;
+    animation: scan 5s linear infinite;
       /* Scan lines */
 @keyframes scan {
     0% { transform: translateY(-100%); } 
