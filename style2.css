@@ -25,7 +25,7 @@ body {
     height: 100%;
     background-color: black;
     background-image: radial-gradient(rgba(3, 212, 3, 0.801), black 120%);
-    animation: backgroundGlow 10s ease-in-out infinite;
+    animation: backgroundGlow 4s ease-in-out infinite;
 }
 .scan-lines {
     position: absolute;
