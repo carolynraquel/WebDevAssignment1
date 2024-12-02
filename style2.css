@@ -14,7 +14,8 @@ h1 {
     position: absolute;
     font-size: 10em;
     white-space: nowrap;
-    color: white;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
     line-height: 70vh;
     animation: anim 100s linear infinite;
     font-family: "orbitron", sans-serif;
@@ -28,17 +29,18 @@ h1 {
     }
 }
 
+.left h1 {
+    color: black;
+    stroke: 2px;
+    left: 100%;
+}
+
 .left {
     position: relative;
     width: 50%;
     height: 100vh;
     background-attachment: fixed;
     background: url(background.jpg);
-}
-.left h1 {
-    color: black;
-    stroke: 2px;
-    left: 100%;
 }
 
 .right {
