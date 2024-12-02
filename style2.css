@@ -39,33 +39,9 @@ overflow: hidden;}
     animation: scan 1s linear infinite;
 }
 
-@-webkit-keyframes scan background{
-    0% {
-        background-position: 0 -100%;
-    }
-    100% {
-        background-position: 0 100%;
-    }
-}
-/* Animation for scanning lines */
-
-/* Flickering effect */
-.flicker background {
-    animation: flicker 1s infinite alternate;
-}
-
-/* Flicker animation */
-@keyframes flicker background{
-    0% {
-        opacity: 0.95;
-    }
-    50% {
-        opacity: 0.85;
-    }
-    100% {
-        opacity: 0.95;
-    }
-}
+@-webkit-keyframes @keyframes scan {
+     0% { transform: translateY(-100%); } 
+    100% { transform: translateY(100%); } }
 }
 
       
