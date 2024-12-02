@@ -11,7 +11,7 @@ overflow: hidden;}
 width: 50%;
 height: 100vh;
 .fullscreen-backround {
-  background: no-repeat url(background.jpg);}
+  background: url(background.jpg);}
 overflow: hidden;}
 
 .right{position: relative;
