@@ -23,7 +23,7 @@ background: url(background.jpg);
     background-image: radial-gradient(
       rgba(3, 212, 3, 0.801), black 120%
     );
-
+}
 
 .scan-lines {
     position: absolute;
@@ -44,7 +44,7 @@ background: url(background.jpg);
     0% { transform: translateY(-100%); } 
    100% { transform: translateY(100%); } }
 }
-}
+
 
 
 
