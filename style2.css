@@ -23,6 +23,11 @@ overflow: hidden;}
       rgba(3, 212, 3, 0.801), black 120%
     );
 /* Scan lines */
+@keyframes scan {
+    0% { transform: translateY(-100%); } 
+   100% { transform: translateY(100%); } }
+}
+
 .scan-lines {
     position: absolute;
     top: 0;
@@ -39,10 +44,7 @@ overflow: hidden;}
     animation: scan 1s linear infinite;
 }
 
-@keyframes scan {
-     0% { transform: translateY(-100%); } 
-    100% { transform: translateY(100%); } }
-}
+
 
       
     
