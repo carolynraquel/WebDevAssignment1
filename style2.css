@@ -20,49 +20,67 @@ overflow: hidden;}
     background-image: radial-gradient(
       rgba(0, 150, 0, 0.75), black 120%
     );
-/* Create the scan-line effect using background */
-.scan-lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.05) 0%, /* Thin transparent lines */
-      rgba(0, 0, 0, 0.05) 1%, /* Space between lines */
-      rgba(0, 0, 0, 0.05) 2%
-  );
-  animation: scan 1s linear infinite; /* Continuous scan-line movement */
-  pointer-events: none; /* Allows interaction with elements below */
+/* Wrapper for the terminal screen */
+.terminal-screen {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    background-color: black; /* Terminal background */
+    color: #00FF00; /* Retro green text */
+    font-family: 'Courier New', Courier, monospace;
+    position: relative; /* For scan lines layering */
+    overflow: hidden; /* Hide overflow content */
 }
 
-/* Flickering effect to add some realism */
-.flicker {
-  animation: flicker 0.15s infinite alternate;
+/* Scan lines */
+.scan-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cover full height */
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1) 0%, /* Bright thin lines */
+        rgba(0, 0, 0, 0.1) 2px,      /* Space between lines */
+        rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
+    );
+    animation: scan 2s linear infinite; /* Slower scan animation */
+    pointer-events: none; /* Do not interfere with interactions */
 }
 
 /* Animation for scanning lines */
 @keyframes scan {
-  0% {
-      background-position: 0 -100%;
-  }
-  100% {
-      background-position: 0 100%;
-  }
+    0% {
+        background-position: 0 -100%;
+    }
+    100% {
+        background-position: 0 100%;
+    }
 }
 
-/* Flicker animation for added effect */
+/* Content inside the terminal */
+.terminal-content {
+    position: relative; /* For layering content */
+    z-index: 10; /* Ensure content is above scan lines */
+    padding: 20px;
+}
+
+/* Flickering effect */
+.flicker {
+    animation: flicker 0.15s infinite alternate;
+}
+
+/* Flicker animation */
 @keyframes flicker {
-  0% {
-      opacity: 0.9;
-  }
-  50% {
-      opacity: 0.7;
-  }
-  100% {
-      opacity: 0.9;
-  }
+    0% {
+        opacity: 0.95;
+    }
+    50% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 0.95;
+    }
 }
     overflow: hidden;}
       
