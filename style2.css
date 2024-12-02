@@ -49,7 +49,7 @@ overflow: hidden;}
 
 /* Flickering effect */
 .flicker {
-    animation: flicker 0.15s infinite alternate;
+    animation: flicker 1s infinite alternate;
 }
 
 /* Flicker animation */
