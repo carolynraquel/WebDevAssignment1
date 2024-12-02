@@ -30,7 +30,19 @@ body {
 
 h1{position: absolute;
 font-size: 10em;
-white-space: nowrap;}
+white-space: nowrap;
+color: white;
+line-height: 70vh;
+animation: anim 100s linear infinite}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 .scan-lines {
     position: absolute;
