@@ -20,7 +20,7 @@ overflow: hidden;}
     background-image: radial-gradient(
       rgba(0, 150, 0, 0.75), black 120%
     );
-    background: repeating-linear-gradient(
+    background-image: repeating-linear-gradient(
         0deg,
         rgba(black, 0.15),
         rgba(black, 0.15) 1px,
