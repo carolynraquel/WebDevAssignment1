@@ -11,6 +11,8 @@ overflow: hidden;}
 .left{position: relative;
 width: 50%;
 height: 100vh;
+background-attachment: fixed;
+background-position: left;
 background: url(background.jpg);
 overflow: hidden;}
 
