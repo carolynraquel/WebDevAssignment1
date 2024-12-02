@@ -33,7 +33,7 @@ overflow: hidden;}
         rgba(0, 0, 0, 0.1) 2px,      /* Space between lines */
         rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
     );
-    animation: scan 2s linear infinite; /* Slower scan animation */
+    animation: scan 5s linear infinite; /* Slower scan animation */
     pointer-events: none; /* Do not interfere with interactions */
 }
 
@@ -45,13 +45,6 @@ overflow: hidden;}
     100% {
         background-position: 0 100%;
     }
-}
-
-/* Content inside the terminal */
-.terminal-content {
-    position: relative; /* For layering content */
-    z-index: 10; /* Ensure content is above scan lines */
-    padding: 20px;
 }
 
 /* Flickering effect */
