@@ -16,7 +16,10 @@ overflow: hidden;}
 .right{position: relative;
     width: 50%;
     height: 100%;
-    background: green; 
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(0, 150, 0, 0.75), black 120%
+    );
         /* background: rgba(2, 255, 2, 0.75), black 120%; */
         /* background: repeating-linear-gradient(
             0deg,
