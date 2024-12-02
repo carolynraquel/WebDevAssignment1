@@ -18,9 +18,7 @@ overflow: hidden;}
     height: 100%;
     /* background: #7DF9FF; Electric Blue */
     overflow: hidden;body {
-        background: black;
-        background: url
-          rgba(0, 150, 0, 0.75), black 120%
+        background: rgba(0, 150, 0, 0.75), black 120%
         ;
         background: repeating-linear-gradient(
             0deg,
