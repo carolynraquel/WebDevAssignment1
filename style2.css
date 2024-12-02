@@ -23,26 +23,27 @@ background: url(background.jpg);
     background-image: radial-gradient(
       rgba(3, 212, 3, 0.801), black 120%
     );
+    .scan-lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Cover full height */
+        background: repeating-linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.2) 0%, /* Bright thin lines */
+            rgba(0, 0, 0, 0.1) 5px,      /* Space between lines */
+            rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
+        );
+        pointer-events: none; /* Do not interfere with interactions */
+        animation: scan 5s linear infinite;
+          /* Scan lines */
+    @keyframes scan {
+        0% { transform: translateY(-100%); } 
+       100% { transform: translateY(100%); } }
 }
 
-.scan-lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Cover full height */
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.2) 0%, /* Bright thin lines */
-        rgba(0, 0, 0, 0.1) 5px,      /* Space between lines */
-        rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
-    );
-    pointer-events: none; /* Do not interfere with interactions */
-    animation: scan 5s linear infinite;
-      /* Scan lines */
-@keyframes scan {
-    0% { transform: translateY(-100%); } 
-   100% { transform: translateY(100%); } }
+
 }
 
 
