@@ -55,5 +55,7 @@ body {
     50% {
             background-color: rgba(28, 201, 28, 0.801);
         }
-   
+     0% {
+            background-color: rgba(0, 88, 0, 0.801);
+        }
 }
