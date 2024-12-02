@@ -22,11 +22,7 @@ overflow: hidden;}
     background-image: radial-gradient(
       rgba(3, 212, 3, 0.801), black 120%
     );
-/* Scan lines */
-@keyframes scan {
-    0% { transform: translateY(-100%); } 
-   100% { transform: translateY(100%); } }
-}
+
 
 .scan-lines {
     position: absolute;
@@ -42,6 +38,15 @@ overflow: hidden;}
     );
     pointer-events: none; /* Do not interfere with interactions */
     animation: scan 1s linear infinite;
+
+    .scan-lines {
+        border: 1px solid red;
+      }
+      /* Scan lines */
+@keyframes scan {
+    0% { transform: translateY(-100%); } 
+   100% { transform: translateY(100%); } }
+}
 }
 
 
