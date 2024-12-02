@@ -15,7 +15,11 @@ h1 {
     font-size: 10em;
     white-space: nowrap;
     color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px rgb(255, 255, 255); /* white glowing stroke */
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.), /* Glowing effect */
+                 0 0 20px rgba(0, 255, 0, 0.),
+                 0 0 30px rgba(0, 255, 0, 0.),
+                 0 0 40px rgba(0, 255, 0, 0.8);
     line-height: 70vh;
     animation: anim 100s linear infinite;
     font-family: "orbitron", sans-serif;
