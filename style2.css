@@ -1,56 +1,69 @@
-body{margin: 0;
-padding-top: 10;
-overflow: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-.container{position: relative;
-width: 100%;
-height: 100vh;
-display: flex;
-overflow: hidden;}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
 
-.left{position: relative;
-width: 50%;
-height: 100vh;
-background-attachment: fixed;
-background: url(background.jpg);
-overflow: hidden;}
-
-.right{position: relative;
+.left, .right {
     width: 50%;
-    height: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+.right {
     background-color: black;
-    background-image: radial-gradient(
-      rgba(3, 212, 3, 0.801), black 120%
-    );
+    color: #00ff00;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
 
-
+/* Scanning lines effect */
 .scan-lines {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Cover full height */
+    height: 100%;
     background: repeating-linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.2) 0%, /* Bright thin lines */
-        rgba(0, 0, 0, 0.1) 5px,      /* Space between lines */
-        rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(0, 0, 0, 0.1) 2px,
+        rgba(0, 0, 0, 0.1) 4px
     );
-    pointer-events: none; /* Do not interfere with interactions */
+    pointer-events: none;
     animation: scan 1s linear infinite;
+}
 
-    .scan-lines {
-        border: 1px solid red;
-      }
-      /* Scan lines */
+/* Scanline animation */
 @keyframes scan {
-    0% { transform: translateY(-100%); } 
-   100% { transform: translateY(100%); } }
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
 }
+
+h1 {
+    font-size: 2rem;
+    padding: 20px;
+    color: inherit;
+    z-index: 1;
 }
-
-
-
-      
-    
