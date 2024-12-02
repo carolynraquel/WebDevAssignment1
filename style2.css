@@ -38,14 +38,14 @@ font-family: 'orbitron', sans-serif;
 }
 @keyframes anim {
     0% {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translate3d(-100%, 0, 0);
     }
 }
 .left h1 {
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white; /* Border color and width */
     left: 100%;
 }
@@ -67,12 +67,12 @@ font-family: 'orbitron', sans-serif;
 /* glowing background */
 @keyframes backgroundGlow {
     0% {
-        background-color: rgba(2, 252, 2, 0.801);
+        background: rgba(2, 252, 2, 0.801);
     }
     50% {
-        background-color: rgba(255, 255, 255, 0.966);
+        background: rgba(255, 255, 255, 0.966);
     }
     100% {
-        background-color: rgba(3, 253, 3, 0.801);
+        background: rgba(3, 253, 3, 0.801);
     }
 }
