@@ -46,9 +46,10 @@ font-family: 'orbitron', sans-serif;
 }
 .left h1 {
     color: transparent;
-    stroke:3px;
+    -webkit-text-stroke: 2px white; /* Border color and width */
     left: 100%;
 }
+
 .scan-lines {
     position: absolute;
     top: 0;
