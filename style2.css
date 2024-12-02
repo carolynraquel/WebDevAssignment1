@@ -29,7 +29,7 @@ overflow: hidden;}
     height: 100%; /* Cover full height */
     background: repeating-linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.1) 0%, /* Bright thin lines */
+        rgba(255, 255, 255, 0.2) 0%, /* Bright thin lines */
         rgba(0, 0, 0, 0.1) 2px,      /* Space between lines */
         rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
     );
