@@ -36,6 +36,7 @@ h1 {
     background: url(background.jpg);
 }
 .left h1 {
+    color: black;
     stroke: 2px;
     left: 100%;
 }
