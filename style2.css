@@ -8,7 +8,7 @@ height: 100vh;
 display: flex;
 overflow: hidden;}
 
-.left{position: relative;
+.left{position: center;
 width: 50%;
 height: 100vh;
 background-size: cover url(background.jpg);
