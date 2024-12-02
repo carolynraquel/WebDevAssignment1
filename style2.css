@@ -29,7 +29,8 @@ body {
 }
 
 h1{position: absolute;
-font-size: 10em;}
+font-size: 10em;
+white-space: nowrap;}
 
 .scan-lines {
     position: absolute;
