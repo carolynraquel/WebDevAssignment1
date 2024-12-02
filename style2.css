@@ -16,5 +16,6 @@ overflow: hidden;}
 .right{position: relative;
     width: 50%;
     height: 100%;
-    background: peachpuff;
+    background: electricblue; 
+    /* pantone color of the year #ffbe98 */
     overflow: hidden;}    
