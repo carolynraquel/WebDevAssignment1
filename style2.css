@@ -39,7 +39,7 @@ overflow: hidden;}
     animation: scan 1s linear infinite;
 }
 
-@-webkit-keyframes @keyframes scan {
+@-webkit-keyframes scan {
      0% { transform: translateY(-100%); } 
     100% { transform: translateY(100%); } }
 }
