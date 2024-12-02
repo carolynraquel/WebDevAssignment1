@@ -38,7 +38,7 @@ overflow: hidden;}
     pointer-events: none; /* Do not interfere with interactions */
 }
 
-@-webkit-keyframes scan {
+@-webkit-keyframes scan background{
     0% {
         background-position: 0 -100%;
     }
@@ -49,12 +49,12 @@ overflow: hidden;}
 /* Animation for scanning lines */
 
 /* Flickering effect */
-.flicker {
+.flicker background {
     animation: flicker 1s infinite alternate;
 }
 
 /* Flicker animation */
-@keyframes flicker {
+@keyframes flicker background{
     0% {
         opacity: 0.95;
     }
