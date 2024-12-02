@@ -7,7 +7,7 @@ height: 100vh;
 display: flex;
 overflow: hidden;}
 
-.left{position: relative;
+.left{position: center;
 width: 50%;
 height: 100vh;
 background: url(background.jpg);
@@ -18,7 +18,7 @@ overflow: hidden;}
     height: 100%;
     background-color: black;
     background-image: radial-gradient(
-      rgba(0, 150, 0, 0.75), black 120%
+      rgba(3, 212, 3, 0.801), black 120%
     );
 /* Scan lines */
 .scan-lines {
@@ -64,6 +64,7 @@ overflow: hidden;}
         opacity: 0.95;
     }
 }
-    overflow: hidden;}
+}
+
       
     
