@@ -16,19 +16,10 @@ overflow: hidden;}
 .right{position: relative;
     width: 50%;
     height: 100%;
-    
-  /* Wrapper for the terminal screen */
-.terminal-screen {
-  width: 100%; /* Adjust width as needed */
-  height: 100vh; /* Full viewport height */
-  background-color: black;
-  background-image: radial-gradient(
-    rgba(0, 150, 0, 0.75), black 120%
-  );
-  position: relative; /* Positioning for layering effects */
-  overflow: hidden; /* Hide anything outside the screen */
-}
-
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(0, 150, 0, 0.75), black 120%
+    );
 /* Create the scan-line effect using background */
 .scan-lines {
   position: absolute;
