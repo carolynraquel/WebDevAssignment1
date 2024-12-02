@@ -36,7 +36,7 @@ overflow: hidden;}
         rgba(0, 0, 0, 0.1) 4px       /* End of spacing */
     );
     pointer-events: none; /* Do not interfere with interactions */
-    animation: scanlineAnimation 0.5s linear infinite;
+    animation: scanlineAnimation 5s linear infinite;
 
 }
 
