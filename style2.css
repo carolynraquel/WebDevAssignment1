@@ -12,7 +12,6 @@ overflow: hidden;}
 width: 50%;
 height: 100vh;
 background-attachment: fixed;
-background-size: cover;
 background: url(background.jpg);
 overflow: hidden;}
 
