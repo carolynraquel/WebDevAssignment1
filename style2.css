@@ -20,6 +20,20 @@ overflow: hidden;}
     background-image: radial-gradient(
       rgba(0, 150, 0, 0.75), black 120%
     );
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(black, 0.15),
+        rgba(black, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+      );}
         /* background: rgba(2, 255, 2, 0.75), black 120%; */
         /* background: repeating-linear-gradient(
             0deg,
