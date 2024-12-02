@@ -10,7 +10,8 @@ overflow: hidden;}
 .left{position: relative;
 width: 50%;
 height: 100%;
-background-size: cover url(background.jpg);
+background-size: cover;
+background: url(background.jpg);
 overflow: hidden;}
 
 .right{position: relative;
