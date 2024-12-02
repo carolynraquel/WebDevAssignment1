@@ -36,7 +36,7 @@ h1 {
     background: url(background.jpg);
 }
 .left h1 {
-    color: transparent;
+    fill-opacity: transparent;
     stroke: 2px;
     left: 100%;
 }
