@@ -10,6 +10,32 @@ body {
     height: 100vh;
     display: flex;
 }
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
+/* Button styles go here */
+.button-container {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 h1 {
     position: absolute;
     font-size: 10em;
@@ -87,27 +113,4 @@ h1 {
         /* Space between lines */ rgba(0, 0, 0, 0.1) 4px /* End of spacing */
     );
 }
-button {
-    padding: 15px 30px;
-    font-size: 20px;
-    color: white;
-    background-color: green;
-    border: 2px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: pulse 1.5s infinite;
-}
-/* Button styles go here */
-.button-container {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
