@@ -11,7 +11,7 @@ body {
     display: flex;
 }
 
-.button-container {
+#enterMe {
     position: absolute;
     bottom: 25%; /* Position three-quarters down the page */
     left: 50%;
@@ -20,7 +20,7 @@ body {
     text-align: center;
 }
 
-button {
+#enterMe {
     padding: 15px 30px;
     font-size: 20px;
     color: white;
@@ -34,7 +34,7 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+#enterMe:hover {
     background-color: white;
     color: green;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
