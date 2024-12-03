@@ -9,40 +9,44 @@
     <link rel="alternate" href="index-es.html" hreflang="es">
     <title>Interactive Resume - My Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+<link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glQAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAAAAAAAAAAADNHeCVzR3glc0d4JUAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAPw/AAD4HwAA8A8AAOAHAADAAwAAgAEAAAAAAAAAAAAAAAAAAIABAADBgwAA48cAAP//AAD//wAA//8AAA==" type="image/x-icon">
 </head>
 <body>
 
-    <!-- Header Section with Navigation -->
-    <header>
+    <!-- Navigation Bar Section -->
+    <div id="nav-container">
         <nav>
             <ul>
                 <li><a href="index.html" id="home-link">Home</a></li>
                 <li><a href="tableauresume.html" id="resume-link">Resume</a></li>
             </ul>
         </nav>
-        <!-- Language Selection -->
-        <div id="language-select-container">
-            <button class="q-btn" onclick="changeLanguage('en')">English</button>
-            <button class="q-btn" onclick="changeLanguage('es')">Español</button>
-        </div>
-    </header>
+    </div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Welcome Section -->
+    <!-- Language Selection Section -->
+    <div id="language-select-container">
+        <button class="q-btn" onclick="changeLanguage('en')">English</button>
+        <button class="q-btn" onclick="changeLanguage('es')">Español</button>
+    </div>
+
+    <!-- Welcome Section -->
+    <div id="welcome-container">
         <section id="welcome">
             <h1 id="welcome-title">Welcome to My Interactive Resume</h1>
             <p id="welcome-description">Explore my work and experience through an engaging visual journey.</p>
         </section>
+    </div>
 
-        <!-- About Me Section -->
+    <!-- About Me Section -->
+    <div id="about-container">
         <section id="about">
             <h2 id="about-title">About Me</h2>
             <p id="about-description">I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.</p>
         </section>
+    </div>
 
-        <!-- Projects Section -->
+    <!-- Projects Section -->
+    <div id="projects-container">
         <section id="projects">
             <h2 id="projects-title">My Projects</h2>
             <p id="projects-description">Here are some of the exciting projects I am working on:</p>
@@ -52,14 +56,15 @@
                 <li>Data Analysis for Unveiling Desires</li>
             </ol>
         </section>
-    </main>
+    </div>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Carolyn Carney. All rights reserved.</p>
-    </footer>
+    <div id="footer-container">
+        <footer>
+            <p>&copy; 2024 Carolyn Carney. All rights reserved.</p>
+        </footer>
+    </div>
 
-    <!-- Language Change Script -->
     <script>
         // Translations for English and Spanish
         const translations = {
