@@ -10,14 +10,13 @@ body {
     height: 100vh;
     display: flex;
 }
- 
 a {
     text-decoration: none;
     display: inline-block;
 }
     /* won't affect layout outside of button */
 
-#enterMe {
+#enterMe .container {
     position: absolute;
     display: inline-block; 
     bottom: 25%; /* Position three-quarters down the page */
@@ -58,6 +57,7 @@ a {
         transform: scale(1);
     }
 }
+
 
 h1 {
     position: absolute;
