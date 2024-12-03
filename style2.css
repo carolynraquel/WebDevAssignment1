@@ -58,7 +58,21 @@ h1 {
     animation: backgroundGlow 5s linear ease-in-out infinite;
     will-change: opacity;
 }
-
+/* glowing background */
+@keyframes backgroundGlow {
+    0% {
+        opacity: 1;
+        background-color: rgba(3, 197, 3, 0.801);
+        }
+        50% {
+        opacity: 0.5;
+        background-color: rgba(1, 66, 1, 0.5);
+        }
+        100% {
+        opacity: 1;
+        background-color: rgba(3, 197, 3, 0.801);
+        }
+    }
 
 /* Scan lines */
 
@@ -76,18 +90,4 @@ h1 {
     );
 }
 
-/* glowing background */
-@keyframes backgroundGlow {
-    0% {
-        opacity: 1;
-        background-color: rgba(3, 197, 3, 0.801);
-        }
-        50% {
-        opacity: 0.5;
-        background-color: rgba(1, 66, 1, 0.5);
-        }
-        100% {
-        opacity: 1;
-        background-color: rgba(3, 197, 3, 0.801);
-        }
-    }
+
