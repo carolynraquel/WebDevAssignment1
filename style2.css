@@ -11,29 +11,45 @@ body {
     display: flex;
 }
 
+.button-container {
+    position: absolute;
+    bottom: 25%; /* Position three-quarters down the page */
+    left: 50%;
+    transform: translate3D(-50%, 0, 0); /* Center the button */
+    z-index: 1000; /* Ensures the button is above other elements */
+    text-align: center;
+}
+
 button {
     padding: 15px 30px;
     font-size: 20px;
     color: white;
     background-color: green;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     animation: pulse 1.5s infinite;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    transition: all 0.3s ease;
 }
-/* Button styles go here */
-.button-container {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+
+button:hover {
+    background-color: white;
+    color: green;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 h1 {
