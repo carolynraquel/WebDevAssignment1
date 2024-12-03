@@ -87,16 +87,6 @@ h1 {
         /* Space between lines */ rgba(0, 0, 0, 0.1) 4px /* End of spacing */
     );
 }
-
-/* Button styles go here */
-.button-container {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
 button {
     padding: 15px 30px;
     font-size: 20px;
@@ -106,6 +96,14 @@ button {
     border-radius: 10px;
     cursor: pointer;
     animation: pulse 1.5s infinite;
+}
+/* Button styles go here */
+.button-container {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 @keyframes pulse {
