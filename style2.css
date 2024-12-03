@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding-top: 10px;
+    padding-top: 10;
     overflow: hidden;
 }
 
@@ -9,16 +9,20 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
- }
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
     /* won't affect layout outside of button */
 
     /* button positioning */
 #enterMe {
     position: absolute;
     display: inline-block; 
-    bottom: 20%; /* Position three-quarters down the page */
+    bottom: 25%; /* Position three-quarters down the page */
     left: 50%;
-    transform: translateX(-70%); /* Center the button */
+    transform: translate3D(-50%, 0, 0); /* Center the button */
     z-index: 1000; /* Ensures the button is above other elements */
     text-align: center;
 }
@@ -45,10 +49,10 @@ body {
 
 @keyframes pulse {
     0% {
-        transform: scale(1) translateZ(0);
+        transform: scale(1);
     }
     50% {
-        transform: scale(1.1) translateZ(0);
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -69,15 +73,15 @@ h1 {
         0 0 40px rgba(0, 255, 0, 0.8);
     line-height: 70vh;
     font-family: "orbitron", sans-serif;
-    animation: anim 4s linear infinite;
+    animation: anim 200s linear infinite;
     will-change: transform;
 }
 @keyframes anim {
     0% {
-        transform: translate3D(0, 0, 0) translateZ(0);
+        transform: translate3D(0, 0, 0);
     }
     100% {
-        transform: translate3D(-10%, 0, 0) translateZ(0);
+        transform: translate3D(-100%, 0, 0);
         /* even though text is only moving from left to right, turning this off will break it. */
     }
 }
@@ -108,16 +112,10 @@ h1 {
 
 @keyframes backgroundGlow {
     0% {
-        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.3) 30%, black 80%) translateZ(0);
-    }
-    25% {
-        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.329) 30%, black 80%) translateZ(0);
+        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.3) 30%, black 80%);
     }
     50% {
-        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.548) 30%, black 80%);
-    }
-    75% {
-        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.329) 30%, black 80%) translateZ(0);
+        background-image: radial-gradient(circle, rgba(3, 216, 3, 0.3) 30%, black 80%);
     }
     100% {
         background-image: radial-gradient(circle, rgba(3, 197, 3, 0.3) 30%, black 80%);
