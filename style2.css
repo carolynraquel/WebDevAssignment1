@@ -21,7 +21,7 @@ a {
     position: absolute;
     display: inline-block; 
     bottom: 20%; /* Position three-quarters down the page */
-    left: 60%;
+    left: 40%;
     transform: translate3D(-50%, 0, 0); /* Center the button */
     z-index: 1000; /* Ensures the button is above other elements */
     text-align: center;
