@@ -163,4 +163,13 @@ h1, h2 {
   #footer-container p {
       font-size: 12px;
   }
+
+  .enter-button:hover {
+      background-color: #7D4B96;
+      color: white;
+      border-color: #9a0add86;
+      font-size: 14px;
+      padding: 8px 15px;
+      box-shadow: 0 0 10px rgba(26, 1, 48, 0.1);
+  }
 }
