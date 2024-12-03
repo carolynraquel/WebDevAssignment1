@@ -63,7 +63,7 @@ h1 {
 
 @keyframes backgroundGlow {
     0% {
-        background-color: rgba(2, 252, 2, 0.801);
+        background-color: rgba(2, 56, 2, .0801);
     }
     50% {
         background-color: rgba(169, 248, 211, 0.801);
