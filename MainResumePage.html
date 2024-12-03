@@ -9,113 +9,60 @@
     <link rel="alternate" href="index-es.html" hreflang="es">
     <title>Interactive Resume - My Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Hire Me - Carolyn Carney</title> <!--page title-->
-    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glQAAAAAAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAAAAAAAAAAADNHeCVzR3glc0d4JUAAAAAAAAAAAAAAAAAAAAAzR3glc0d4JXNHeCVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAPw/AAD4HwAA8A8AAOAHAADAAwAAgAEAAAAAAAAAAAAAAAAAAIABAADBgwAA48cAAP//AAD//wAA//8AAA==" type="image/x-icon">
-    <!--💟 pink heart favicon-->
-
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Interactive Portfolio</h1>
+        <div class="language-toggle">
+            <button class="q-btn" onclick="changeLanguage('en')">English</button>
+            <button class="q-btn" onclick="changeLanguage('es')">Español</button>
+        </div>
+    </header>
 
-    <!-- Navigation Bar Section -->
-    <div id="nav-container">
-        <nav>
-            <ul>
-                <li><a href="index.html" id="home-link">Home</a></li>
-                <li><a href="tableauresume.html" id="resume-link">Resume</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Language Selection Section -->
-    <div id="language-select-container">
-        <label id="language-select" onchange="changeLanguage(this.value)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-        </label>
-    </div>
-
-    <!-- Welcome Section -->
-    <div id="welcome-container">
-        <section id="welcome">
-            <h1 id="welcome-title">Welcome to My Interactive Resume</h1>
-            <p id="welcome-description">Explore my work and experience through an engaging visual journey.</p>
-        </section>
-    </div>
-
-    <!-- About Me Section -->
-    <div id="about-container">
+    <main>
         <section id="about">
-            <h2 id="about-title">About Me</h2>
-            <p id="about-description">I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.</p>
+            <h2>About Me</h2>
+            <p id="about-text">Hello, I'm Carolyn! I specialize in web development and interactive media. Explore my portfolio to learn more about my projects and professional background.</p>
         </section>
-    </div>
 
-    <!-- Projects Section -->
-    <div id="projects-container">
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Interactive Media</li>
+                <li>Photography</li>
+                <li>Graphic Design</li>
+            </ul>
+        </section>
+
         <section id="projects">
-            <h2 id="projects-title">My Projects</h2>
-            <p id="projects-description">Here are some of the exciting projects I am working on:</p>
-            <!-- Add project list here -->
-            <p id="projects-list">
-            <ol>
-                <li>Social Media Automation with JS & Puppeteer</li>
-                <li>Application of AI in CSAM cases</li>
-                <li>Data Analysis for Unveiling Desires</li>
-            </ol>
-                    </p>
+            <h2>Projects</h2>
+            <div id="project-list">
+                <p id="personal projects">
+                    <ol>
+                        <li>Social Media Automation with JS & Puppeteer</li>
+                        <li>Application of AI in CSAM cases</li>
+                        <li>Data Analysis for Unveiling Desires</li>
+                    </ol>
+                            </p><!-- Your project list here -->
+            </div>
         </section>
-    </div>
+    </main>
 
-    <!-- Footer Section -->
-    <div id="footer-container">
-        <footer>
-            <p>&copy; 2024 Carolyn Carney. All rights reserved.</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2024 Carolyn Carney. All rights reserved.</p>
+    </footer>
 
     <script>
-        // Translations for English and Spanish
-        const translations = {
-            en: {
-                welcomeTitle: "Welcome to My Interactive Resume",
-                welcomeDescription: "Explore my work and experience through an engaging visual journey.",
-                aboutTitle: "About Me",
-                aboutDescription: "I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.",
-                projectsTitle: "My Projects",
-                projectsDescription: "Here are some of the exciting projects I've worked on:"
-            },
-            es: {
-                welcomeTitle: "Bienvenido a mi currículum interactivo",
-                welcomeDescription: "Explora mi trabajo y experiencia a través de un viaje visual envolvente.",
-                aboutTitle: "Sobre mí",
-                aboutDescription: "Soy un desarrollador apasionado y aprendiz de por vida, con habilidades en múltiples lenguajes de programación y tecnologías web.",
-                projectsTitle: "Mis proyectos",
-                projectsDescription: "Aquí algunos de los emocionantes proyectos en los que he trabajado:"
+        function changeLanguage(language) {
+            const aboutText = document.getElementById('about-text');
+            if (language === 'en') {
+                aboutText.textContent = "Hello, I'm Carolyn! I specialize in web development and interactive media. Explore my portfolio to learn more about my projects and professional background.";
+            } else if (language === 'es') {
+                aboutText.textContent = "¡Hola! Soy Carolyn. Me especializo en desarrollo web y medios interactivos. Explora mi portafolio para saber más sobre mis proyectos y mi experiencia profesional.";
             }
-        };
-
-        // Function to change language
-        function changeLanguage(lang) {
-            document.getElementById('welcome-title').innerText = translations[lang].welcomeTitle;
-            document.getElementById('welcome-description').innerText = translations[lang].welcomeDescription;
-            document.getElementById('about-title').innerText = translations[lang].aboutTitle;
-            document.getElementById('about-description').innerText = translations[lang].aboutDescription;
-            document.getElementById('projects-title').innerText = translations[lang].projectsTitle;
-            document.getElementById('projects-description').innerText = translations[lang].projectsDescription;
-
-            // Update the nav links for language-specific versions (if applicable)
-            document.getElementById('home-link').innerText = lang === 'en' ? 'Home' : 'Inicio';
-            document.getElementById('resume-link').innerText = lang === 'en' ? 'Resume' : 'Currículum';
         }
-
-        // Default language is English
-        changeLanguage('en');
     </script>
-
 </body>
 </html>
-<!-- Language Selection Section -->
-<div id="language-select-container">
-    <button onclick="changeLanguage('en')">English</button>
-    <button onclick="changeLanguage('es')">Español</button>
-</div>
