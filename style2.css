@@ -80,11 +80,14 @@ h1 {
 @keyframes backgroundGlow {
     0% {
         opacity: 1;
-    }
-    50% {
+        background-color: rgba(3, 197, 3, 0.801);
+        }
+        50% {
         opacity: 0.5;
-    }
-    100% {
+        background-color: rgba(1, 66, 1, 0.5);
+        }
+        100% {
         opacity: 1;
+        background-color: rgba(3, 197, 3, 0.801);
+        }
     }
-}
