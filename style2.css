@@ -63,18 +63,16 @@ h1 {
 
 @keyframes backgroundGlow {
     0% {
-        background-color: rgba(2, 56, 2, .0801);
+        box-shadow: 0 0 20px rgba(3, 197, 3, 0.3), 0 0 50px rgba(3, 197, 3, 0.1);
     }
     50% {
-        background-color: rgba(11, 163, 11, 0.842);
+        box-shadow: 0 0 40px rgba(3, 197, 3, 0.3, 0 0 70px rgba(3, 197, 3, 0.6));
     }
     100% {
-        background-color: rgba(8, 180, 8, 0.904);
+        box-shadow: 0 0 20px rgba(3, 197, 3, 0.3), 0 0 50px rgba(3, 197, 3, 0.1);
     }
-    50% {
-            background-color: rgba(2, 56, 2, .0801);
-        }
 }
+
 
 
 .scan-lines {
