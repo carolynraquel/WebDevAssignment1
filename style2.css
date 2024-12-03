@@ -22,7 +22,7 @@ h1 {
         0 0 30px rgba(0, 255, 0, 0),
         0 0 40px rgba(0, 255, 0, 0.8);
     line-height: 70vh;
-    animation: anim 100s linear infinite;
+    animation: anim 200s linear infinite;
     font-family: "orbitron", sans-serif;
     will-change: transform;
 }
