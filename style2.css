@@ -54,7 +54,7 @@ h1 {
     height: 100%;
     background-color: black;
     background-image: radial-gradient(rgba(3, 197, 3, 0.801), black 120%);
-    animation: backgroundGlow 10s linear infinite;
+    animation: backgroundGlow 4.5s linear ease-in-out infinite;
     will-change: opacity;
 }
 
@@ -78,7 +78,7 @@ h1 {
 /* glowing background */
 @keyframes backgroundGlow {
     0% {
-        opacity: 0.63;
+        opacity: 0.73;
     }
     50% {
         opacity: 0.966;
