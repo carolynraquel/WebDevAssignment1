@@ -19,7 +19,7 @@ a {
 
 #enterMe {
     position: absolute;
-    display: inline-block;
+    /* display: inline-block; */
     bottom: 25%; /* Position three-quarters down the page */
     left: 50%;
     transform: translate3D(-50%, 0, 0); /* Center the button */
