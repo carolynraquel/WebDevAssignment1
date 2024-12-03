@@ -49,7 +49,7 @@ h1 {
     background-attachment: fixed;
     background: url(background.jpg);
 }
-#id.right {
+.right {
     position: relative;
     width: 50%;
     height: 100%;
@@ -59,6 +59,19 @@ h1 {
     will-change: opacity;
 }
 /* Scan lines */
+
+
+@keyframes backgroundGlow {
+    0% {
+        background-color: rgba(2, 252, 2, 0.801);
+    }
+    50% {
+        background-color: rgba(169, 248, 211, 0.801);
+    }
+    100% {
+        background-color: rgba(2, 56, 2, 0.801);
+    }
+}
 
 .scan-lines {
     position: absolute;
@@ -72,16 +85,4 @@ h1 {
         /* Bright thin lines */ rgba(0, 0, 0, 0.1) 5px,
         /* Space between lines */ rgba(0, 0, 0, 0.1) 4px /* End of spacing */
     );
-}
-
-@keyframes backgroundGlow {
-    0% {
-        background-color: rgba(2, 252, 2, 0.801);
-    }
-    50% {
-        background-color: rgba(169, 248, 211, 0.801);
-    }
-    100% {
-        background-color: rgba(2, 56, 2, 0.801);
-    }
 }
