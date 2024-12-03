@@ -55,7 +55,7 @@ h1 {
     height: 100%;
     background-color: black;
     background-image: radial-gradient(rgba(3, 197, 3, 0.801), black 120%);
-    animation: backgroundGlow 5s linear ease-in-out infinite;
+    animation: backgroundGlow 5s ease-in-out infinite;
     will-change: opacity;
 }
 /* Scan lines */
