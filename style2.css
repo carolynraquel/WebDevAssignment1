@@ -22,7 +22,7 @@ a {
     /* display: inline-block; */
     bottom: 25%; /* Position three-quarters down the page */
     left: 50%;
-    transform: translate3D(-50%, 0, 0); /* Center the button */
+    transform: translate3D(-60%, 0, 0); /* Center the button */
     z-index: 1000; /* Ensures the button is above other elements */
     text-align: center;
 }
