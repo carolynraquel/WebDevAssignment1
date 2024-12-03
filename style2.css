@@ -16,7 +16,7 @@ a {
 }
     /* won't affect layout outside of button */
 
-#enterMe .container {
+.button-container {
     position: absolute;
     display: inline-block; 
     bottom: 25%; /* Position three-quarters down the page */
