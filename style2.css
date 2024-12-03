@@ -85,7 +85,7 @@ h1 {
     }
 }
     /* Styling for the enter button */
-.enter-button {
+#id.enter-button {
     position: absolute;
     bottom: 25%; /* Positions the button about three-quarters down the page */
     left: 50%;
@@ -101,7 +101,7 @@ h1 {
   }
   
     /* Adds a shadow effect to the button */
-    .enter-button:hover {
+   #id.enter-button:hover {
         background-color: #7D4B96;
         color: white;
         border-color: #9a0add86;
