@@ -31,7 +31,7 @@ h1 {
         transform: translate3D(0, 0, 0);
     }
     100% {
-        transform: translate3D(-100%, 0, 0); 
+        transform: translate3D(-100%, 0, 0);
         /* even though text is only moving from left to right, turning this off will break it. */
     }
 }
@@ -61,18 +61,24 @@ h1 {
 /* glowing background */
 @keyframes backgroundGlow {
     0% {
-        opacity: 1;
-        background-color: rgba(3, 197, 3, 0.801);
-        }
-        50% {
-        opacity: 0.5;
-        background-color: rgba(1, 66, 1, 0.5);
-        }
-        100% {
-        opacity: 1;
-        background-color: rgba(3, 197, 3, 0.801);
-        }
+        box-shadow:
+            0 0 5px #03d403,
+            0 0 10px #03d403,
+            0 0 15px #03d403;
     }
+    50% {
+        box-shadow:
+            0 0 20px #03d403,
+            0 0 30px #03d403,
+            0 0 40px #03d403;
+    }
+    100% {
+        box-shadow:
+            0 0 5px #03d403,
+            0 0 10px #03d403,
+            0 0 15px #03d403;
+    }
+}
 
 /* Scan lines */
 
@@ -89,5 +95,3 @@ h1 {
         /* Space between lines */ rgba(0, 0, 0, 0.1) 4px /* End of spacing */
     );
 }
-
-
