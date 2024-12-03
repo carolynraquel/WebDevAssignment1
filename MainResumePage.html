@@ -12,57 +12,96 @@
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Interactive Portfolio</h1>
-        <div class="language-toggle">
-            <button class="q-btn" onclick="changeLanguage('en')">English</button>
-            <button class="q-btn" onclick="changeLanguage('es')">Español</button>
-        </div>
-    </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p id="about-text">Hello, I'm Carolyn! I specialize in web development and interactive media. Explore my portfolio to learn more about my projects and professional background.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
+    <!-- Navigation Bar Section -->
+    <div id="nav-container">
+        <nav>
             <ul>
-                <li>Web Development</li>
-                <li>Interactive Media</li>
-                <li>Photography</li>
-                <li>Graphic Design</li>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="tableauresume.html" id="resume-link">Resume</a></li>
             </ul>
-        </section>
+        </nav>
+    </div>
 
+    <!-- Language Selection Section -->
+    <div id="language-select-container">
+        <button class="q-btn" onclick="changeLanguage('en')">English</button>
+        <button class="q-btn" onclick="changeLanguage('es')">Español</button>
+    </div>
+
+    <!-- Welcome Section -->
+    <div id="welcome-container">
+        <section id="welcome">
+            <h1 id="welcome-title">Welcome to My Interactive Resume</h1>
+            <p id="welcome-description">Explore my work and experience through an engaging visual journey.</p>
+        </section>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about-container">
+        <section id="about">
+            <h2 id="about-title">About Me</h2>
+            <p id="about-description">I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.</p>
+        </section>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects-container">
         <section id="projects">
-            <h2>Projects</h2>
-            <div id="project-list">
-                <p id="personal projects">
-                    <ol>
-                        <li>Social Media Automation with JS & Puppeteer</li>
-                        <li>Application of AI in CSAM cases</li>
-                        <li>Data Analysis for <a href="https://experiment.com/projects/unveiling-desires-exploring-bipoc-bdsm-preferences">Unveiling Desires</a></li>
-                    </ol>
-                            </p><!-- Your project list here -->
-            </div>
+            <h2 id="projects-title">My Projects</h2>
+            <p id="projects-description">Here are some of the exciting projects I am working on:</p>
+            <ol id="projects-list">
+                <li>Social Media Automation with JS & Puppeteer</li>
+                <li>Application of AI in CSAM cases</li>
+                <li>Data Analysis for Unveiling Desires</li>
+            </ol>
         </section>
-    </main>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Carolyn Carney. All rights reserved.</p>
-    </footer>
+    <!-- Footer Section -->
+    <div id="footer-container">
+        <footer>
+            <p>&copy; 2024 Carolyn Carney. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script>
-        function changeLanguage(language) {
-            const aboutText = document.getElementById('about-text');
-            if (language === 'en') {
-                aboutText.textContent = "Hello, I'm Carolyn! I specialize in web development and interactive media. Explore my portfolio to learn more about my projects and professional background.";
-            } else if (language === 'es') {
-                aboutText.textContent = "¡Hola! Soy Carolyn. Me especializo en desarrollo web y medios interactivos. Explora mi portafolio para saber más sobre mis proyectos y mi experiencia profesional.";
+        // Translations for English and Spanish
+        const translations = {
+            en: {
+                welcomeTitle: "Welcome to My Interactive Resume",
+                welcomeDescription: "Explore my work and experience through an engaging visual journey.",
+                aboutTitle: "About Me",
+                aboutDescription: "I am a passionate developer and lifelong learner, skilled in multiple programming languages and web technologies.",
+                projectsTitle: "My Projects",
+                projectsDescription: "Here are some of the exciting projects I've worked on:"
+            },
+            es: {
+                welcomeTitle: "Bienvenido a mi currículum interactivo",
+                welcomeDescription: "Explora mi trabajo y experiencia a través de un viaje visual envolvente.",
+                aboutTitle: "Sobre mí",
+                aboutDescription: "Soy un desarrollador apasionado y aprendiz de por vida, con habilidades en múltiples lenguajes de programación y tecnologías web.",
+                projectsTitle: "Mis proyectos",
+                projectsDescription: "Aquí algunos de los emocionantes proyectos en los que he trabajado:"
             }
+        };
+
+        // Function to change language
+        function changeLanguage(lang) {
+            document.getElementById('welcome-title').innerText = translations[lang].welcomeTitle;
+            document.getElementById('welcome-description').innerText = translations[lang].welcomeDescription;
+            document.getElementById('about-title').innerText = translations[lang].aboutTitle;
+            document.getElementById('about-description').innerText = translations[lang].aboutDescription;
+            document.getElementById('projects-title').innerText = translations[lang].projectsTitle;
+            document.getElementById('projects-description').innerText = translations[lang].projectsDescription;
+
+            // Update the nav links for language-specific versions (if applicable)
+            document.getElementById('home-link').innerText = lang === 'en' ? 'Home' : 'Inicio';
+            document.getElementById('resume-link').innerText = lang === 'en' ? 'Resume' : 'Currículum';
         }
+
+        // Default language is English
+        changeLanguage('en');
     </script>
 </body>
 </html>
