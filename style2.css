@@ -28,10 +28,11 @@ h1 {
 }
 @keyframes anim {
     0% {
-        transform: translateX(0, 0);
+        transform: translate3D(0, 0, 0);
     }
     100% {
-        transform: translateX(-100%, 0,);
+        transform: translate3D(-100%, 0, 0); 
+        /* even though text is only moving from left to right, turning this off will break it. */
     }
 }
 
@@ -78,12 +79,12 @@ h1 {
 /* glowing background */
 @keyframes backgroundGlow {
     0% {
-        opacity: 0.73;
+        opacity: 1;
     }
     50% {
-        opacity: 0.966;
+        opacity: 0.5;
     }
     100% {
-        opacity: 0.73;
+        opacity: 1;
     }
 }
