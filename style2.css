@@ -24,13 +24,14 @@ h1 {
     line-height: 70vh;
     animation: anim 100s linear ease-in-out infinite;
     font-family: "orbitron", sans-serif;
+    will-change: transform;
 }
 @keyframes anim {
     0% {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translate3d(-100%, 0, 0);
     }
 }
 
@@ -47,7 +48,6 @@ h1 {
     background-attachment: fixed;
     background: url(background.jpg);
 }
-
 .right {
     position: relative;
     width: 50%;
@@ -55,7 +55,9 @@ h1 {
     background-color: black;
     background-image: radial-gradient(rgba(3, 212, 3, 0.801), black 120%);
     animation: backgroundGlow 4s ease-in-out infinite;
+    will-change: opacity;
 }
+
 
 /* Scan lines */
 
@@ -76,12 +78,12 @@ h1 {
 /* glowing background */
 @keyframes backgroundGlow {
     0% {
-        background-color: rgba(2, 252, 2, 0.63);
+        opacity: 0.63;
     }
     50% {
-        background-color: rgba(240, 255, 185, 0.966);
+        opacity: 0.966;
     }
     100% {
-        background-color: rgba(3, 253, 3, 0.801);
+        opacity: 0.801;
     }
 }
