@@ -58,28 +58,6 @@ h1 {
     animation: backgroundGlow 5s linear ease-in-out infinite;
     will-change: opacity;
 }
-/* glowing background */
-@keyframes backgroundGlow {
-    0% {
-        box-shadow:
-            0 0 5px #03d403,
-            0 0 10px #03d403,
-            0 0 15px #03d403;
-    }
-    50% {
-        box-shadow:
-            0 0 20px #03d403,
-            0 0 30px #03d403,
-            0 0 40px #03d403;
-    }
-    100% {
-        box-shadow:
-            0 0 5px #03d403,
-            0 0 10px #03d403,
-            0 0 15px #03d403;
-    }
-}
-
 /* Scan lines */
 
 .scan-lines {
