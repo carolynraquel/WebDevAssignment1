@@ -22,16 +22,15 @@ h1 {
         0 0 30px rgba(0, 255, 0, 0),
         0 0 40px rgba(0, 255, 0, 0.8);
     line-height: 70vh;
-    animation: anim 200s linear infinite;
     font-family: "orbitron", sans-serif;
-    will-change: transform;
+    transform: anim 200s linear eas infinite;
 }
 @keyframes anim {
     0% {
-        transform: translate3d(100%, 0, 0);
+        transform: translateX(0, 0);
     }
     100% {
-        transform: translate3d(-100%, 0, 0);
+        transform: translateX(-100%, 0);
     }
 }
 
@@ -53,7 +52,7 @@ h1 {
     width: 50%;
     height: 100%;
     background-color: black;
-    background-image: radial-gradient(rgba(3, 212, 3, 0.801), black 120%);
+    background-image: radial-gradient(rgba(3, 197, 3, 0.801), black 120%);
     animation: backgroundGlow 5s linear infinite;
     will-change: opacity;
 }
