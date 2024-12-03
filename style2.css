@@ -110,8 +110,14 @@ h1 {
     0% {
         background-image: radial-gradient(circle, rgba(3, 197, 3, 0.3) 30%, black 80%) translateZ(0);
     }
+    25% {
+        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.329) 30%, black 80%) translateZ(0);
+    }
     50% {
         background-image: radial-gradient(circle, rgba(3, 197, 3, 0.548) 30%, black 80%);
+    }
+    75% {
+        background-image: radial-gradient(circle, rgba(3, 197, 3, 0.329) 30%, black 80%) translateZ(0);
     }
     100% {
         background-image: radial-gradient(circle, rgba(3, 197, 3, 0.3) 30%, black 80%);
