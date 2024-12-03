@@ -84,3 +84,30 @@ h1 {
         background-color: rgba(3, 253, 3, 0.801);
     }
 }
+    /* Styling for the enter button */
+.enter-button {
+    position: absolute;
+    bottom: 25%; /* Positions the button about three-quarters down the page */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color: #00ff00;
+    border: 2px solid #00ff00;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+    /* Adds a shadow effect to the button */
+    .enter-button:hover {
+        background-color: #7D4B96;
+        color: white;
+        border-color: #9a0add86;
+        font-size: 14px;
+        padding: 8px 15px;
+        box-shadow: 0 0 10px rgba(26, 1, 48, 0.1);
+    }
+  
+
