@@ -71,7 +71,7 @@ h1 {
         0 0 40px rgba(0, 255, 0, 0.8);
     line-height: 70vh;
     font-family: "orbitron", sans-serif;
-    animation: anim 200s linear infinite;
+    animation: anim 4s linear infinite;
     will-change: transform;
 }
 @keyframes anim {
